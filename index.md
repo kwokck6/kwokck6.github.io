@@ -2,7 +2,7 @@
 
 ## Introduction 👋
 
-- 🎓 Education: BEng in Artificial Intelligence: Systems and Technologies (Expected: Jul 2023)
+- 🎓 Education: BEng in Artificial Intelligence: Systems and Technologies, CUHK (Expected graduation: July 2023)
 - 🔭 Interests:
   - Social Analysis: Electoral analysis (prediction of results)
   - Lingustics: Natural language processing, new Cantonese script (粵文)
