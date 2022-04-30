@@ -41,48 +41,9 @@
 
         <div class="bg-light rounded p-3 mb-3">
             <div>
-                <form action="" method="post">
-                    <div class="form-group">
-                        <label for="username">Username:&nbsp;<input id="username" title="Username" onChange={this.handleChange} /></label>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:&nbsp;
-                            <input id="password" type="password" pattern="[A-Za-z!@#$%^_-+=]{8,}" title="Password" onChange={this.handleChange} /></label>
-                        <button id="forgot-pw" class="btn btn-link btn-sm" role="button">Forget password?</button>
-                    </div>
-                    <button id="login" class="btn btn-primary" type="submit">Log in</button>
-                </form>
             </div>
             <div id="app" style="display: none;">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="event-list-tab" data-toggle="tab" href="#event-list" role="tab" aria-controls="event-list" aria-selected="true">Event list</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="fav-tab" data-toggle="tab" href="#fav" role="tab" aria-controls="fav" aria-selected="false">Favourite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
-                    </li>
-                </ul>
                 <div class="tab-content">
-                    <h1> Welcome!</h1>
-                    <h2> Introduction 👋</h2>
-                    <ul>
-                        <li> 🎓 Education: BEng in Artificial Intelligence: Systems and Technologies, CUHK (Expected graduation: July 2023) </li>
-                        <li> 🔭 Interests: </li>
-                        <ul> 
-                            <li> Social Analysis: Electoral analysis (prediction of results) </li>
-                            <li> Lingustics: Natural language processing, new Cantonese script (粵文) </li>
-                            <li> History: Hong Kong history </li>
-                        </ul>
-                        <li> 🌱 Currently learning:
-                        <ul>    
-                            <li> Programming languages: Swift, Kotlin </li>
-                        </li>
-                        <!-- - 📫 How to reach me: kwokchunkiu6@gmail.com -->
-                        <li> 😄 Pronouns: he / his </li>
-                    </ul>   
                 </div>
 
                 <div class="tab-pane" id="fav" role="tabpanel" aria-labelledby="fav-tab">
@@ -97,19 +58,26 @@
         <article>
             <h3 class="font-weight-bold align-content-center">About this project</h3>
             <section id="authors" class="table-info p-3 rounded-top">
-                    <h4 class="font-weight-bold">Authors</h4>
-            </section>
-            <section id="howto" class="table-warning p-3">
-                <h4 class="font-weight-bold">How-to</h4>
-                <p></p>
-            </section>
-            <section id="schema" class="table-warning p-3">
-                <h4 class="font-weight-bold">Design of Schema</h4>
-                <p></p>
+                <h1> Welcome!</h1>
+                <h2> Introduction 👋</h2>
+                <ul>
+                    <li> 🎓 Education: BEng in Artificial Intelligence: Systems and Technologies, CUHK (Expected graduation: July 2023) </li>
+                    <li> 🔭 Interests: </li>
+                    <ul> 
+                        <li> Social Analysis: Electoral analysis (prediction of results) </li>
+                        <li> Lingustics: Natural language processing, new Cantonese script (粵文) </li>
+                        <li> History: Hong Kong history </li>
+                    </ul>
+                    <li> 🌱 Currently learning:
+                    <ul>    
+                        <li> Programming languages: Swift, Kotlin </li>
+                    </li>
+                    <!-- - 📫 How to reach me: kwokchunkiu6@gmail.com -->
+                    <li> 😄 Pronouns: he / his </li>
+                </ul>
             </section>
         </article>
 
         <footer class="bg-dark text-light">&copy;2020. All rights reserved.</footer>
-
     </body>
 </html>
