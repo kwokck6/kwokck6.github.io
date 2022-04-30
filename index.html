@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="name, name, Kwok Chun Kiu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome! | Kwok Chun Kiu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--<script type="text/babel" src="app.js"></script>-->
+</head>
+
+<body style="font-family: Nunito, sans-serif">
+<div class="container">
+    <nav class="nav">
+        <ul class="navbar list-unstyled">
+            <li class="nav-item"><a href="#app" class="nav-link">App</a></li>
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">About this project</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#authors">Authors</a>
+                    <a class="dropdown-item" href="#howto">How-to</a>
+                    <a class="dropdown-item" href="#schema">Design of schema</a>
+                    <a class="dropdown-item" href="#declaration">Declaration</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="bg-light rounded p-3 mb-3">
+        <div>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="username">Username:&nbsp;<input id="username" title="Username" onChange={this.handleChange} /></label>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:&nbsp;
+                        <input id="password" type="password" pattern="[A-Za-z!@#$%^_-+=]{8,}" title="Password" onChange={this.handleChange} /></label>
+                    <button id="forgot-pw" class="btn btn-link btn-sm" role="button">Forget password?</button>
+                </div>
+                <button id="login" class="btn btn-primary" type="submit">Log in</button>
+            </form>
+        </div>
+        <div id="app" style="display: none;">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="event-list-tab" data-toggle="tab" href="#event-list" role="tab" aria-controls="event-list" aria-selected="true">Event list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="fav-tab" data-toggle="tab" href="#fav" role="tab" aria-controls="fav" aria-selected="false">Favourite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane show active" id="event-list" role="tabpanel" aria-labelledby="event-list-tab">
+                    <p></p>
+                    <table class='table table-bordered table-hover'>
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope='col'>Date</th>
+                            <th scope='col'>Summary</th>
+                            <th scope='col'>Organizer</th>
+                            <th scope='col'>Location</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="fav" role="tabpanel" aria-labelledby="fav-tab">
+                    <p>2</p>
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <h3 class="font-weight-bold align-content-center">About this project</h3>
+        <section id="authors" class="table-info p-3 rounded-top">
+                <h4 class="font-weight-bold">Authors</h4>
+        </section>
+        <section id="howto" class="table-warning p-3">
+            <h4 class="font-weight-bold">How-to</h4>
+            <p></p>
+        </section>
+        <section id="schema" class="table-warning p-3">
+            <h4 class="font-weight-bold">Design of Schema</h4>
+            <p></p>
+        </section>
+    </article>
+
+    <footer class="bg-dark text-light">&copy;2020. All rights reserved.</footer>
+</div>
+
+</body>
+</html>
