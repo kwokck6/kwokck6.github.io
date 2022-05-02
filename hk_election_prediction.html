@@ -75,15 +75,21 @@
             I learned about machine learning and deep learning, this idea came to my mind: 'What if we can use AI to predict the election results?'
         </p>
         <div class="alert alert-info">
-            <p> <strong>Note:</strong> This project was submitted as a course project of AIST4010 in 2021/22 Term 2. Currently, it needs further
-                development.
+            <h4 class="alert-heading"><strong>Note:</strong></h4>
+            <p class="m-0"> This project was submitted as a course project of AIST4010 in 2021/22 Term 2, CUHK.
+                Further development of this project is scheduled.
             </p>
         </div>
     </section>
     <section id="methodology">
         <h3 class="section-heading">Related works</h3>
         <p> This project is inspired by P. Gilbert's and V. Jayawickrama's work, both of which are published on
-            <i>Towards Data Science</i>.</p>
+            <i>Towards Data Science</i>. The hierarchical GNN idea stems from
+            <cite title="Deep Hierarchical Graph Convolution for Election Prediction from Geospatial Census Data">
+                <a class="text-decoration-none" href="https://ojs.aaai.org/index.php/AAAI/article/view/3841">
+                    Deep Hierarchical Graph Convolution for Election Prediction from Geospatial Census Data
+                </a>
+            </cite> written by Li et al.</p>
     </section>
     <section>
         <h3 class="section-heading">Methodology</h3>
@@ -97,8 +103,33 @@
     <section>
         <h3 class="section-heading">Results</h3>
         <p> The following table shows the results of the models. </p>
-        <table class="table">
-            <tr></tr>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Method</th>
+                    <th scope="col">Model name</th>
+                    <th scope="col">Training accuracy</th>
+                    <th scope="col">Testing accuracy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Method 1</td>
+                    <td>1</td>  <td>%</td>  <td>%</td>
+                </tr>
+                <tr>
+                    <td>2</td>  <td>%</td> <td>%</td>
+                </tr>
+                <tr>
+                    <td>3</td>  <td>%</td> <td>%</td>
+                </tr>
+                <tr>
+                    <td>Method 2</td>  <td>GNN</td>  <td>%</td>  <td>%</td>
+                </tr>
+                <tr>
+                    <td>Method 3</td>  <td>Hierarchical GNN</td>  <td>%</td>  <td>%</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 </article>
