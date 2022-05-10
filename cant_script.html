@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -36,7 +39,7 @@
     </style>
 </head>
 
-<body style="font-family: Nunito, sans-serif" class="d-flex flex-column h-100">
+<body style="font-family: Nunito, 'Noto Sans HK', sans-serif" class="d-flex flex-column h-100">
 <header class="bg-light">
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid">
@@ -72,6 +75,9 @@
             Qin Empire conquered Baakjyut (百越 / Baiyue), the Han people has tried to sinicise the indigenous peoples.
         </p>
         <p> As the sense of Hong Kong identity becomes apparent, many has been contributing to Cantonese conservation.
+            Some devote themselves to finding Chinese characters in historical dictionaries, some collect vocabulary items
+            and compile a Cantonese dictionary, and some attempt to allow non-native residents and foreigners to learn
+            Cantonese more easily. However, 
         </p>
     </section>
     <section>
@@ -89,11 +95,11 @@
         <h3 class="section-heading"> The 'most scientific' script: Hangul </h3>
         <p> Instead of stacking the scripts left to right and top to bottom, we might want to learn from how the
             Korean King Sejong invented Hangul for their language, which is named the most scientific writing system
-            around the world. In his <cite title="Hunminjeong'eum">Hunminjeong'eum</cite> (訓民正音, <i>lit.</i> 'Teaching Peasants the Correct Sounds'), King Sejong
-            explained why he would like to create Hangul.</p>
+            around the world. In his <cite title="Hunminjeong'eum">Hunminjeong'eum</cite> (訓民正音, <i>lit.</i>
+            'Teaching Peasants the Correct Sounds'), King Sejong explained why he would like to create Hangul.</p>
         <figure>
             <blockquote class="blockquote">
-                <p> Our country's phonology is different from that of China, so the pronunciations and
+                <p> The phonology of our courtry's language is different from that of China, so the pronunciations and
                     characters do not match. Thus, the cries of the illiterate peasants are often not properly known.</p>
             </blockquote>
             <figcaption class="blockquote-footer">
@@ -102,9 +108,124 @@
         </figure>
     </section>
     <section>
-        <h3 class="section-heading">My proposed scripts</h3>
-        <p> Learning from Hangul, we can break down the Cantonese phonology into three significant parts.</p>
-        <p>...</p>
+        <h3 class="section-heading">My proposed script</h3>
+        <p> Learning from Hangul, we can break down the Cantonese phonology into four significant parts.</p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <div class="accordion-header" id="initial-h5">
+                    <h5 class="mb-0">
+                        <button class="accordion-button text-decoration-none" type="button" data-toggle="collapse" data-target="#initial" aria-expanded="true" aria-controls="initial">
+                            Initial
+                        </button>
+                    </h5>
+                </div>
+                <div id="initial" class="" aria-labelledby="initial-h5" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>These are the consonants you make when you start pronouncing a word.</p>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>A</th>  <th>B</th>  <th>C</th>  <th>D</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>A</th>  <td>B</td>  <td>C</td>  <td>D</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" id="medial-h5">
+                    <h5 class="mb-0">
+                        <button class="accordion-button text-decoration-none" type="button" data-toggle="collapse" data-target="#medial" aria-expanded="false" aria-controls="medial">
+                            Medial
+                        </button>
+                    </h5>
+                </div>
+                <div id="medial" class="" aria-labelledby="medial-h5" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>These are the consonants you make when you start pronouncing a word.</p>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>A</th>  <th>B</th>  <th>C</th>  <th>D</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>A</th>  <td>B</td>  <td>C</td>  <td>D</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" id="final-h5">
+                    <h5 class="mb-0">
+                        <button class="accordion-button text-decoration-none" type="button" data-toggle="collapse" data-target="#final" aria-expanded="false" aria-controls="final">
+                            Final
+                        </button>
+                    </h5>
+                </div>
+                <div id="final" class="" aria-labelledby="final-h5" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>These are the consonants you make when you start pronouncing a word.</p>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>A</th>  <th>B</th>  <th>C</th>  <th>D</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>A</th>  <td>B</td>  <td>C</td>  <td>D</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" id="tone-h5">
+                    <h5 class="mb-0">
+                        <button class="accordion-button text-decoration-none" type="button" data-toggle="collapse" data-target="#final" aria-expanded="false" aria-controls="final">
+                            Tone
+                        </button>
+                    </h5>
+                </div>
+                <div id="tone" class="" aria-labelledby="tone-h5" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>These are the ...</p>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>  <th>平聲</th>  <th>上聲</th>  <th>去聲</th>  <th>入聲</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>陰</th>  <td>1</td>  <td>2</td>  <td>3</td>  <td>7</td>
+                            </tr>
+                            <tr>
+                                <th>中</th>  <td>-</td>  <td>-</td>  <td>-</td>  <td>8</td>
+                            </tr>
+                            <tr>
+                                <th>陽</th>  <td>4</td>  <td>5</td>  <td>6</td>  <td>9</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="alert alert-info">
+                            <p class="m-0"><strong>Note:</strong> In Jyutping, tone 7 is merged with 1, 8 with 3 and 9 with 6.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <p></p>
     </section>
 </article>
